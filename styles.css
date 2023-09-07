@@ -1,0 +1,167 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    background-color: #36384d;
+}
+.mainContainer{
+    text-align: center;
+    margin-top: 100px;
+}
+.subMainContainer{
+    display: inline-block;
+    text-align: left;
+    background-color: white;
+    padding-top: 35px;
+    padding-left: 35px;
+    border-radius: 20px;
+}
+.subTextContainer{
+    margin-right: 22px;
+    float: left;
+    padding-top: 15px;
+}
+.subTextContainer_Header h1{
+    color: #232849;
+    margin-bottom: 17px;
+    font-size: 45px;
+}
+.subTextContainer_Header p{
+    font-size: 12px;
+    margin-bottom: 29px;
+    width: 270px;
+    display: inline-block;
+}
+.subTextContainer_Footer {
+    margin-bottom: 30px;
+}
+.sTCF01,.sTCF02,.sTCF03{
+    margin-bottom: 15px;
+}
+.sTCF01 p,.sTCF02 p,.sTCF03 p{
+    display: inline;
+    font-size: 13px;
+}
+.sTCF01 span,.sTCF02 span,.sTCF03 span{
+    margin-right: 10px;
+    float: left;
+}
+.subInputForm{
+    display: block;
+}
+.inputForm label{
+    font-size: 11px;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+.inputForm input{
+    width: 78%;
+    border-radius: 6px;
+    height: 41px;
+    border: 1px solid #dbdbdb;
+    padding-left: 20px;
+    font-family: 'Roboto';
+
+}
+.inputForm input:hover{
+    cursor: pointer;
+}
+.inputForm button{
+    width: 87%;
+    height: 40px;
+    border-radius: 6px;
+    margin-top: 10px;
+    background-color: #242740;
+    color: white;
+    font-family: 'Roboto';
+    font-weight: 600;
+    border: none;
+    font-size: 11px;
+}
+.inputForm button:hover{
+    background-image: linear-gradient(to right,#ff5377,#ff673e);
+    cursor: pointer;
+    box-shadow: 5px 5px 10px 2px gray;
+}
+.subImageContainer{
+    float:left;
+    margin-right: 17px;
+    position: relative;
+    bottom: 17px;
+}
+.subImageContainer img{
+    width: 283px
+}
+.messageContainer{
+    font-family: 'Roboto';
+    background-color: #ffff;
+    text-align: left;
+    margin: 0 auto;
+    padding-left: 45px;
+    padding-top: 30px;
+    padding-right: 45px;
+    padding-bottom: 50px;
+    width: 290px;
+    border-radius: 20px;
+    z-index: 10;
+    position: absolute;
+    top: 20%;
+    left: 37%;
+    transform: scale(0);
+    transition: 300ms transform;
+}
+.activeMessageContainer{
+    transform: scale(1);
+}
+.messageContainer span{
+    margin-bottom: 30px;
+    display: block;
+}
+.messageContainer h1{
+    width: 300px;
+    font-size: 43px;
+    margin-bottom: 22px;
+}
+.messageContainer p{
+    font-size: 13px;
+    width: 301px;
+    line-height: 1.5;
+}
+#email_info{
+    font-size: 13px;
+    margin-bottom: 0px;
+}
+.dismissButton{
+    width: 100%;
+    height: 40px;
+    border-radius: 10px;
+    margin-top: 40px;
+    background-color: #242740;
+    color: white;
+    font-family: 'Roboto';
+    font-weight: 600;
+    border: none;
+    font-size: 11px;
+}
+.dismissButton:hover{
+    background-image: linear-gradient(to right,#ff5377,#ff673e);
+    cursor: pointer;
+    box-shadow: 5px 5px 10px 2px gray;
+}    
+#overlay{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    pointer-events: none;
+    opacity: 0;
+}
+#overlay.active{
+    opacity: 1;
+    pointer-events: all;
+}
